@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Special Offers - SkyWings</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="../style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✈️</text></svg>">
+</head>
+<body>
+<div id="preloader"><div class="loader"></div></div>
+
+<nav class="navbar">
+  <div class="container">
+    <a href="../index.html" class="nav-logo"><i class="fas fa-plane-departure"></i> Sky<span>Wings</span></a>
+    <div class="nav-links">
+      <a href="../index.html">Home</a>
+      <a href="../index.html#flightsSection">Flights</a>
+      <a href="../index.html#destinations">Destinations</a>
+      <a href="offers.html" class="active">Offers</a>
+      <a href="my-bookings.html">My Bookings</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="nav-actions">
+      <button class="theme-toggle"><i class="fas fa-moon"></i></button>
+      <button class="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</nav>
+
+<section style="padding:120px 0 60px;background:linear-gradient(135deg,var(--secondary),var(--secondary-dark));color:white;text-align:center">
+  <div class="container">
+    <h1 style="font-size:2.5rem;margin-bottom:10px">🎉 Special Offers & Deals</h1>
+    <p style="opacity:0.9;font-size:1.1rem">Save big on your next journey with these exclusive discounts.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-title"><h2>Limited Time Offers</h2><p>Hurry! These deals won't last forever.</p></div>
+    <div class="countdown" id="countdownTimer">
+      <div class="countdown-item"><div class="num" id="cdHours">08</div><span class="label">Hours</span></div>
+      <div class="countdown-item"><div class="num" id="cdMins">45</div><span class="label">Minutes</span></div>
+      <div class="countdown-item"><div class="num" id="cdSecs">00</div><span class="label">Seconds</span></div>
+    </div>
+    <div class="offers-grid" style="margin-top:30px">
+      <div class="offer-card zoom-in"><div class="offer-icon"><i class="fas fa-graduation-cap"></i></div><h4>Student Discount</h4><p>Special fares for students with valid ID.</p><div class="offer-discount">15% OFF</div><div class="offer-coupon">STUDENT15</div></div>
+      <div class="offer-card zoom-in"><div class="offer-icon"><i class="fas fa-fire"></i></div><h4>Festival Offers</h4><p>Celebrate with amazing festival discounts.</p><div class="offer-discount">25% OFF</div><div class="offer-coupon">FESTIVE25</div></div>
+      <div class="offer-card zoom-in"><div class="offer-icon"><i class="fas fa-users"></i></div><h4>Family Discount</h4><p>Book for 4+ and save together.</p><div class="offer-discount">20% OFF</div><div class="offer-coupon">FAMILY20</div></div>
+      <div class="offer-card zoom-in"><div class="offer-icon"><i class="fas fa-credit-card"></i></div><h4>Credit Card Offers</h4><p>Extra savings with partner banks.</p><div class="offer-discount">10% OFF</div><div class="offer-coupon">CARD10</div></div>
+      <div class="offer-card zoom-in"><div class="offer-icon"><i class="fas fa-clock"></i></div><h4>Early Bird Discount</h4><p>Book 30 days in advance and save.</p><div class="offer-discount">30% OFF</div><div class="offer-coupon">EARLY30</div></div>
+      <div class="offer-card zoom-in"><div class="offer-icon"><i class="fas fa-military-medal"></i></div><h4>Military Discount</h4><p>Thank you for your service. Exclusive discount for military personnel.</p><div class="offer-discount">18% OFF</div><div class="offer-coupon">MILITARY18</div></div>
+      <div class="offer-card zoom-in"><div class="offer-icon"><i class="fas fa-baby"></i></div><h4>Senior Citizen</h4><p>Special fares for senior travelers (60+).</p><div class="offer-discount">12% OFF</div><div class="offer-coupon">SENIOR12</div></div>
+      <div class="offer-card zoom-in"><div class="offer-icon"><i class="fas fa-route"></i></div><h4>Group Booking</h4><p>Book 10+ tickets and get exclusive group rates.</p><div class="offer-discount">22% OFF</div><div class="offer-coupon">GROUP22</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="background:var(--bg-secondary);text-align:center">
+  <div class="container">
+    <h2 style="margin-bottom:15px">Terms & Conditions</h2>
+    <p style="color:var(--text-secondary);max-width:700px;margin:0 auto;line-height:1.8">
+      Offers are valid for a limited time only. Discounts apply to base fare only and cannot be combined with other promotions. 
+      Some blackout dates and restrictions may apply. Offers are subject to availability and change without notice.
+      Valid passport and visa required for international travel.
+    </p>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container"><div class="footer-bottom"><p>&copy; 2026 SkyWings Airlines. All rights reserved.</p></div></div>
+</footer>
+
+<button class="back-to-top" aria-label="Back to top"><i class="fas fa-arrow-up"></i></button>
+<div class="toast-container"></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/js/all.min.js"></script>
+<script src="../script.js"></script>
+</body>
+</html>

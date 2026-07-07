@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book a Flight - SkyWings</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="../style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✈️</text></svg>">
+</head>
+<body>
+<div id="preloader"><div class="loader"></div></div>
+
+<nav class="navbar">
+  <div class="container">
+    <a href="../index.html" class="nav-logo"><i class="fas fa-plane-departure"></i> Sky<span>Wings</span></a>
+    <div class="nav-links">
+      <a href="../index.html">Home</a>
+      <a href="flights.html" class="active">Flights</a>
+      <a href="../index.html#destinations">Destinations</a>
+      <a href="offers.html">Offers</a>
+      <a href="my-bookings.html">My Bookings</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="nav-actions">
+      <button class="theme-toggle"><i class="fas fa-moon"></i></button>
+      <button class="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</nav>
+
+<section style="padding:120px 0 40px;background:linear-gradient(135deg,var(--primary),var(--primary-dark));color:white;text-align:center">
+  <div class="container">
+    <h1 style="font-size:2.2rem;margin-bottom:10px"><i class="fas fa-ticket-alt"></i> Book Your Flight</h1>
+    <p style="opacity:0.9">Complete your booking with seat selection and passenger details.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-title"><h2>Start Your Booking</h2><p>Search for flights and proceed to book.</p></div>
+    <form class="search-form" id="searchForm" style="margin-bottom:30px">
+      <div class="form-row">
+        <div class="form-group"><label>From</label><input type="text" id="from" placeholder="City" list="airportList" required></div>
+        <div class="form-group"><label>To</label><input type="text" id="to" placeholder="City" list="airportList" required></div>
+      </div>
+      <div class="form-row three-col">
+        <div class="form-group"><label>Departure</label><input type="date" id="departDate" required></div>
+        <div class="form-group"><label>Passengers</label><select id="passengers"><option>1</option><option>2</option><option>3</option><option>4</option></select></div>
+        <div class="form-group"><label>Class</label><select id="travelClass"><option value="all">All</option><option>Economy</option><option>Premium Economy</option><option>Business</option><option>First Class</option></select></div>
+      </div>
+      <button type="submit" class="search-btn"><i class="fas fa-search"></i> Search Flights</button>
+    </form>
+
+    <datalist id="airportList">
+      <option value="New York (JFK)"><option value="London (LHR)"><option value="Dubai (DXB)">
+      <option value="Paris (CDG)"><option value="Tokyo (NRT)"><option value="Singapore (SIN)">
+      <option value="Sydney (SYD)"><option value="Bangkok (BKK)"><option value="Los Angeles (LAX)">
+    </datalist>
+
+    <div class="flights-container" id="flightsContainer"></div>
+  </div>
+</section>
+
+<div class="modal" id="flightModal"><div class="modal-content">
+  <button class="modal-close" id="modalClose">&times;</button>
+  <h2>Flight Details</h2>
+  <div class="details-grid">
+    <div class="detail-item"><div class="label">Airline</div><div class="value" id="modalAirline">—</div></div>
+    <div class="detail-item"><div class="label">Flight Number</div><div class="value" id="modalFlightNo">—</div></div>
+    <div class="detail-item"><div class="label">Aircraft</div><div class="value" id="modalAircraft">—</div></div>
+    <div class="detail-item"><div class="label">Departure</div><div class="value" id="modalDeparture">—</div></div>
+    <div class="detail-item"><div class="label">Arrival</div><div class="value" id="modalArrival">—</div></div>
+    <div class="detail-item"><div class="label">Terminal</div><div class="value" id="modalTerminal">—</div></div>
+    <div class="detail-item"><div class="label">Gate</div><div class="value" id="modalGate">—</div></div>
+    <div class="detail-item"><div class="label">Duration</div><div class="value" id="modalDuration">—</div></div>
+    <div class="detail-item"><div class="label">Baggage</div><div class="value" id="modalBaggage">—</div></div>
+    <div class="detail-item"><div class="label">Meal</div><div class="value" id="modalMeal">—</div></div>
+    <div class="detail-item" style="grid-column:1/-1"><div class="label">Wi-Fi</div><div class="value" id="modalWifi">—</div></div>
+  </div>
+  <button class="search-btn" id="modalBookBtn" style="margin-top:20px">Book This Flight</button>
+</div></div>
+
+<footer class="footer">
+  <div class="container"><div class="footer-bottom"><p>&copy; 2026 SkyWings Airlines. All rights reserved.</p></div></div>
+</footer>
+
+<div class="loading-overlay" id="searchLoader"><div class="loading-spinner"></div></div>
+<button class="back-to-top" aria-label="Back to top"><i class="fas fa-arrow-up"></i></button>
+<div class="toast-container"></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/js/all.min.js"></script>
+<script src="../script.js"></script>
+</body>
+</html>
