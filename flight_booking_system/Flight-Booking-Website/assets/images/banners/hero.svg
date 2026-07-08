@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e"/>
+      <stop offset="50%" style="stop-color:#16213e"/>
+      <stop offset="100%" style="stop-color:#0f3460"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ff6b35"/>
+      <stop offset="100%" style="stop-color:#e55a2b"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <circle cx="200" cy="150" r="250" fill="rgba(255,107,53,0.05)"/>
+  <circle cx="1400" cy="700" r="300" fill="rgba(26,115,232,0.05)"/>
+  <g transform="translate(800,450)" opacity="0.08">
+    <path d="M200,0 C200,110.4 110.4,200 0,200 C-110.4,200 -200,110.4 -200,0 C-200,-110.4 -110.4,-200 0,-200 C110.4,-200 200,-110.4 200,0Z" fill="none" stroke="white" stroke-width="3"/>
+    <path d="M150,0 C150,82.8 82.8,150 0,150 C-82.8,150 -150,82.8 -150,0 C-150,-82.8 -82.8,-150 0,-150 C82.8,-150 150,-82.8 150,0Z" fill="none" stroke="white" stroke-width="2"/>
+    <path d="M100,0 C100,55.2 55.2,100 0,100 C-55.2,100 -100,55.2 -100,0 C-100,-55.2 -55.2,-100 0,-100 C55.2,-100 100,-55.2 100,0Z" fill="none" stroke="white" stroke-width="1.5"/>
+  </g>
+  <g transform="translate(800,350)">
+    <path d="M-60,0 L60,0 M40,-10 L60,0 L40,10" stroke="url(#accent)" stroke-width="3" fill="none"/>
+  </g>
+  <text x="800" y="420" text-anchor="middle" fill="rgba(255,255,255,0.08)" font-size="180" font-weight="800" font-family="Arial">FLY</text>
+</svg>

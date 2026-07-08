@@ -16,22 +16,22 @@ const flightsData = [
 
 // ===== DESTINATIONS DATA =====
 const destinations = [
-  { name: 'Dubai', country: 'UAE', price: '$549', image: 'https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=400&h=300&fit=crop' },
-  { name: 'Singapore', country: 'Singapore', price: '$429', image: 'https://images.unsplash.com/photo-1525625293386-3f8f99389edd?w=400&h=300&fit=crop' },
-  { name: 'London', country: 'United Kingdom', price: '$329', image: 'https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?w=400&h=300&fit=crop' },
-  { name: 'Paris', country: 'France', price: '$399', image: 'https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=400&h=300&fit=crop' },
-  { name: 'New York', country: 'USA', price: '$329', image: 'https://images.unsplash.com/photo-1496442226666-8d4d0e62e6e9?w=400&h=300&fit=crop' },
-  { name: 'Tokyo', country: 'Japan', price: '$689', image: 'https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=400&h=300&fit=crop' },
-  { name: 'Bangkok', country: 'Thailand', price: '$469', image: 'https://images.unsplash.com/photo-1508009603885-50cf7c579365?w=400&h=300&fit=crop' },
-  { name: 'Sydney', country: 'Australia', price: '$559', image: 'https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9?w=400&h=300&fit=crop' },
+  { name: 'Dubai', country: 'UAE', price: '$549', image: 'assets/images/destinations/dubai.svg' },
+  { name: 'Singapore', country: 'Singapore', price: '$429', image: 'assets/images/destinations/singapore.svg' },
+  { name: 'London', country: 'United Kingdom', price: '$329', image: 'assets/images/destinations/london.svg' },
+  { name: 'Paris', country: 'France', price: '$399', image: 'assets/images/destinations/paris.svg' },
+  { name: 'New York', country: 'USA', price: '$329', image: 'assets/images/destinations/newyork.svg' },
+  { name: 'Tokyo', country: 'Japan', price: '$689', image: 'assets/images/destinations/tokyo.svg' },
+  { name: 'Bangkok', country: 'Thailand', price: '$469', image: 'assets/images/destinations/bangkok.svg' },
+  { name: 'Sydney', country: 'Australia', price: '$559', image: 'assets/images/destinations/sydney.svg' },
 ];
 
 // ===== REVIEWS DATA =====
 const reviewsData = [
-  { name: 'Sarah Johnson', title: 'Frequent Flyer', rating: 5, text: 'Amazing booking experience! Found great deals and the seat selection feature was incredibly user-friendly. Will definitely use again.', img: 'https://i.pravatar.cc/100?img=1' },
-  { name: 'Michael Chen', title: 'Business Traveler', rating: 4, text: 'Excellent flight search and filtering options. The fare calculator helped me stay within budget. Highly recommended for business trips.', img: 'https://i.pravatar.cc/100?img=3' },
-  { name: 'Emma Williams', title: 'Vacation Planner', rating: 5, text: 'Booked a family vacation through this site. The process was smooth, and I loved the destination guides. Made planning so easy!', img: 'https://i.pravatar.cc/100?img=5' },
-  { name: 'David Kumar', title: 'Travel Blogger', rating: 4, text: 'The dark mode and responsive design are great. Flight schedules are accurate and the booking confirmation was instant.', img: 'https://i.pravatar.cc/100?img=8' },
+  { name: 'Sarah Johnson', title: 'Frequent Flyer', rating: 5, text: 'Amazing booking experience! Found great deals and the seat selection feature was incredibly user-friendly. Will definitely use again.', img: 'assets/images/icons/avatar1.svg' },
+  { name: 'Michael Chen', title: 'Business Traveler', rating: 4, text: 'Excellent flight search and filtering options. The fare calculator helped me stay within budget. Highly recommended for business trips.', img: 'assets/images/icons/avatar2.svg' },
+  { name: 'Emma Williams', title: 'Vacation Planner', rating: 5, text: 'Booked a family vacation through this site. The process was smooth, and I loved the destination guides. Made planning so easy!', img: 'assets/images/icons/avatar3.svg' },
+  { name: 'David Kumar', title: 'Travel Blogger', rating: 4, text: 'The dark mode and responsive design are great. Flight schedules are accurate and the booking confirmation was instant.', img: 'assets/images/icons/avatar4.svg' },
 ];
 
 // ===== DOM READY =====
